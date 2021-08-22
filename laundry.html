@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <h1 class="mainTitle">Laundry Management</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="wear.html">Wear</a>
+            <a class="nav-link" href="laundry.html">Laundry</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <span>Laundry</span>
+    </div>
+    <div>
+      <span>상의</span>
+      <select class="form-select codeSelectUPLa" aria-label="Default select example">
+        <option selected>코드선택</option>
+      </select>
+      <!-- <select class="form-select codeSelectUPLa2" aria-label="Default select example">
+        <option selected>코드선택</option>
+      </select>
+      <select class="form-select codeSelectUPLa3" aria-label="Default select example">
+        <option selected>코드선택</option>
+      </select> -->
+      <span>하의</span>
+      <select class="form-select codeSelectBOLa" aria-label="Default select example">
+        <option selected>코드선택</option>
+      </select>
+      <span>아우터</span>
+      <select class="form-select codeSelectOULa" aria-label="Default select example">
+        <option selected>코드선택</option>
+      </select>
+      <button type="button" class="btn btn-primary" onclick="uploadWashData()">확인</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="laundry.js"></script>
+  </body>
+</html>
